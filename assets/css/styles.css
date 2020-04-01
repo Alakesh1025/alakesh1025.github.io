@@ -10,8 +10,8 @@
 body {
   font-family: 'Lato', arial, sans-serif;
   color: #434343;
-  background: #dae3e7;
-  font-size: 16px;
+  /* background: #dae3e7; */
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -492,6 +492,9 @@ iframe {
   background: #32383e;
   color: #fff;
   padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 .footer .copyright {
   line-height: 1.6;
@@ -531,3 +534,24 @@ iframe {
     left: 50%;
     transform: translatex(-50%);
 }
+
+
+
+.navbar {
+  margin-bottom: 0px;
+  min-height: 120px;
+}
+
+.navbar-nav {
+  margin-top: 40px;
+}
+
+.content{
+  text-align: justify;
+}
+
+.content p{
+  margin: 0 0 40px;
+}
+
+

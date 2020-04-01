@@ -28,6 +28,106 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+/*** FONTS ***/
+/*** VARIABLES ***/
+/* Colors */
+/*** EXTEND ***/
+/* box-shadow */
+ ol.gradient-list > li, ol.gradient-list > li::before {
+	 box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+}
+/*** STYLE ***/
+ *, *:before, *:after {
+	 box-sizing: border-box;
+}
+ html, body {
+	 margin: 0;
+	 padding: 0;
+}
+ body {
+	 background-color: #fafafa;
+	 color: #1d1f20;
+	 font-family: 'Raleway', sans-serif;
+}
+ main {
+	 display: block;
+	 margin: 0 auto;
+	 max-width: 40rem;
+	 padding: 1rem;
+}
+ ol.gradient-list {
+	 counter-reset: gradient-counter;
+	 list-style: none;
+	 margin: 1.75rem 0;
+	 /* padding-left: 1rem; */
+}
+ ol.gradient-list > li {
+	 background: white;
+	 border-radius: 0 0.5rem 0.5rem 0.5rem;
+	 counter-increment: gradient-counter;
+	 margin-top: 1rem;
+	 min-height: 3rem;
+	 padding: 1rem 1rem 1rem 3rem;
+	 position: relative;
+}
+ ol.gradient-list > li::before, ol.gradient-list > li::after {
+	 background: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
+	 border-radius: 1rem 1rem 0 1rem;
+	 content: '';
+	 height: 3rem;
+	 left: -1rem;
+	 overflow: hidden;
+	 position: absolute;
+	 top: -1rem;
+	 width: 3rem;
+}
+ ol.gradient-list > li::before {
+	 align-items: flex-end;
+	 content: counter(gradient-counter);
+	 color: #1d1f20;
+	 display: flex;
+	 font: 900 1.5em/1 'Montserrat';
+	 justify-content: flex-end;
+	 padding: 0.125em 0.25em;
+	 z-index: 1;
+}
+ ol.gradient-list > li:nth-child(10n+1):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+2):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+3):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+4):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+5):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 1) 0%, rgba(253, 220, 50, 1) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+6):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+7):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+8):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+9):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+10):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0) 0%, rgba(253, 220, 50, 0) 100%);
+}
+ ol.gradient-list > li + li {
+	 margin-top: 2rem;
+}
+ </style>
     
 </head> 
 
@@ -90,30 +190,28 @@
                         
                             <div class="profile-content pull-left" >
 
-			    <ul>
-				 
-				  <a class="btn btn-cta-primary "<h4> Journal</h4></a>
-				 
-				  <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Channel Condition Based Dynamic Beacon Interval for Faster Formation of 6TiSCH Network” in <b> IEEE Transaction on Mobile Computing, IF=4.47</b> (Accepted), March 2020, pp. 1-12, <a href="https://ieeexplore.ieee.org/document/9036988">Link</a></p></li>
-				 
-				  <a class="btn btn-cta-primary "<h4> Conferences</h4></a>
-				 
-				 <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Opportunistic Priority Alternation Scheme for Faster Formation of 6TiSCH Network” in 21st International Conference on Distributed Computing and Networking (ICDCN), Jan 2020, pp. 1-5, <a href="https://dl.acm.org/doi/abs/10.1145/3369740.3369779">Link</a></p></li>
-				<li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Faster Joining in 6TiSCH Network using Dynamic Beacon Interval,” in 11th International Conference on Communication Systems Networks (COMSNET), Jan 2019,pp. 454–457, <a href="https://ieeexplore.ieee.org/abstract/document/8711460/">Link</a></p></li>
-				  <li><p class="subDetails"><b> A. Kalita</b>, N. Ahmed, H. Rahman, and M. I. Hussain, “A QoS-aware MAC protocol for large-scale networks in Internet of Things,” in 2017 IEEE International Conference on Advanced Networks and Telecommunications Systems (ANTS), Dec 2017, pp. 1–6, <a href="https://ieeexplore.ieee.org/abstract/document/8384132">Link</a></p></li>
-				  <li><p class="subDetails"><b> A. Kalita</b>, K. Ray, A. Biswas, and M. A. Hussain, “A topology for network-on-chip,” in 2016 	International Conference on Information Communication and Embedded Systems (ICICES), Feb 2016, pp. 1–7, <a href="https://ieeexplore.ieee.org/abstract/document/7518838">Link</a></p></li>
-				  <li><p class="subDetails">K. Ray, <b> A. Kalita</b>, A. Biswas, and M. A. Hussain, “A multipath networkon-chip topology,” in 2016 International Conference on Information Communication and Embedded Systems (ICICES), Feb 2016, pp. 1–7, <a href="https://ieeexplore.ieee.org/abstract/document/7518839">Link</a></p></li>
-				  <li><p class="subDetails">A. Biswas, M. A. Hussain, and <b> A. Kalita</b>, “An improved congestion free modified fat tree network.” in 2016 International Conference on Signal Processing, Communication, Power and Embedded System (SCOPES), Oct 2016, pp. 759-763 , <a href="https://ieeexplore.ieee.org/abstract/document/7955541">Link</a></p></li>
-				  <li><p class="subDetails"><b> A. Kalita</b>, A. Biswas, Md. Anwar Hussain “ A Multipath Fault Tolerant Topology for Network-On-Chip”, accepted in Springer,International Conference on Computing and CommunicationSystems 2016 (I3CS2016)-2016.(<b>Accepted but not published</b>)</p></li>
-				</ul> 
-                     
+                              
                                       
                             </div><!--//item-->
                             <hr class="divider" />
                             <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank">                          
-                                </a>
- 
+                                
+                              <ol class="gradient-list">
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Channel Condition Based Dynamic Beacon Interval for Faster Formation of 6TiSCH Network” in <b> IEEE Transaction on Mobile Computing, IF=4.47</b> (Accepted), March 2020, pp. 1-12, <a href="https://ieeexplore.ieee.org/document/9036988">Link</a></p></li>
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Opportunistic Priority Alternation Scheme for Faster Formation of 6TiSCH Network” in 21st International Conference on Distributed Computing and Networking (ICDCN), Jan 2020, pp. 1-5, <a href="https://dl.acm.org/doi/abs/10.1145/3369740.3369779">Link</a></p></li>
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Channel Condition Based Dynamic Beacon Interval for Faster Formation of 6TiSCH Network” in <b> IEEE Transaction on Mobile Computing, IF=4.47</b> (Accepted), March 2020, pp. 1-12, <a href="https://ieeexplore.ieee.org/document/9036988">Link</a></p></li>
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Opportunistic Priority Alternation Scheme for Faster Formation of 6TiSCH Network” in 21st International Conference on Distributed Computing and Networking (ICDCN), Jan 2020, pp. 1-5, <a href="https://dl.acm.org/doi/abs/10.1145/3369740.3369779">Link</a></p></li>
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Channel Condition Based Dynamic Beacon Interval for Faster Formation of 6TiSCH Network” in <b> IEEE Transaction on Mobile Computing, IF=4.47</b> (Accepted), March 2020, pp. 1-12, <a href="https://ieeexplore.ieee.org/document/9036988">Link</a></p></li>
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Opportunistic Priority Alternation Scheme for Faster Formation of 6TiSCH Network” in 21st International Conference on Distributed Computing and Networking (ICDCN), Jan 2020, pp. 1-5, <a href="https://dl.acm.org/doi/abs/10.1145/3369740.3369779">Link</a></p></li>
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Channel Condition Based Dynamic Beacon Interval for Faster Formation of 6TiSCH Network” in <b> IEEE Transaction on Mobile Computing, IF=4.47</b> (Accepted), March 2020, pp. 1-12, <a href="https://ieeexplore.ieee.org/document/9036988">Link</a></p></li>
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Opportunistic Priority Alternation Scheme for Faster Formation of 6TiSCH Network” in 21st International Conference on Distributed Computing and Networking (ICDCN), Jan 2020, pp. 1-5, <a href="https://dl.acm.org/doi/abs/10.1145/3369740.3369779">Link</a></p></li>
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Channel Condition Based Dynamic Beacon Interval for Faster Formation of 6TiSCH Network” in <b> IEEE Transaction on Mobile Computing, IF=4.47</b> (Accepted), March 2020, pp. 1-12, <a href="https://ieeexplore.ieee.org/document/9036988">Link</a></p></li>
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Opportunistic Priority Alternation Scheme for Faster Formation of 6TiSCH Network” in 21st International Conference on Distributed Computing and Networking (ICDCN), Jan 2020, pp. 1-5, <a href="https://dl.acm.org/doi/abs/10.1145/3369740.3369779">Link</a></p></li>
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Channel Condition Based Dynamic Beacon Interval for Faster Formation of 6TiSCH Network” in <b> IEEE Transaction on Mobile Computing, IF=4.47</b> (Accepted), March 2020, pp. 1-12, <a href="https://ieeexplore.ieee.org/document/9036988">Link</a></p></li>
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Opportunistic Priority Alternation Scheme for Faster Formation of 6TiSCH Network” in 21st International Conference on Distributed Computing and Networking (ICDCN), Jan 2020, pp. 1-5, <a href="https://dl.acm.org/doi/abs/10.1145/3369740.3369779">Link</a></p></li>
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Channel Condition Based Dynamic Beacon Interval for Faster Formation of 6TiSCH Network” in <b> IEEE Transaction on Mobile Computing, IF=4.47</b> (Accepted), March 2020, pp. 1-12, <a href="https://ieeexplore.ieee.org/document/9036988">Link</a></p></li>
+                                <li><p class="subDetails"><b> A. Kalita</b> and M. Khatua, “Opportunistic Priority Alternation Scheme for Faster Formation of 6TiSCH Network” in 21st International Conference on Distributed Computing and Networking (ICDCN), Jan 2020, pp. 1-5, <a href="https://dl.acm.org/doi/abs/10.1145/3369740.3369779">Link</a></p></li>
+                              </ol> 
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->		
@@ -125,11 +223,11 @@
 </div><!--//row-->
 </div><!--//masonry-- 
   <!-- ******FOOTER****** --> 
-    <footer class="footer">
-        <div class="container text-center">
-                <small class="copyright"> Copyright@alakeshkalita2020</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
+  <footer class="footer">
+    <div class="container text-center">
+            <small class="copyright"> Copyright@alakeshkalita2020</small>
+    </div><!--//container-->
+</footer><!--//footer-->
  
     <!-- Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
@@ -143,3 +241,4 @@
     <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
 </html> 
+
