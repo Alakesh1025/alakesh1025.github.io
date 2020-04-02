@@ -123,19 +123,20 @@ iframe {
 }
 .header .profile-image {
   margin-right: 20px;
+  margin-top: 6px;
 }
 .header .profile-content .name {
   color: #49515a;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 3px;
-  margin-top: 30px;
+  margin-top: 3px;
 }
 .header .profile-content .desc {
   color: #778492;
   font-family: "Lato", arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 .header .profile-content .social a {
@@ -587,8 +588,9 @@ blink {
     visibility: visible;
   }
 }
-<style>
-    @import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
 /*** FONTS ***/
 /*** VARIABLES ***/
 /* Colors */
