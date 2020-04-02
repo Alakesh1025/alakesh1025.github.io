@@ -554,4 +554,6 @@ iframe {
   margin: 0 0 40px;
 }
 
-
+.blink-two {
+    animation: blinker-two 5s linear infinite;
+}
