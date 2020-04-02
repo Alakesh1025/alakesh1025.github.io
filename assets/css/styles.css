@@ -559,8 +559,8 @@ iframe {
 }
 
 blink {
-  -webkit-animation: 2s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
-  animation: 2s linear infinite condemned_blink_effect;
+  -webkit-animation: 5s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+  animation: 5s linear infinite condemned_blink_effect;
 }
 
 /* for Safari 4.0 - 8.0 */
