@@ -687,4 +687,11 @@ blink {
  ol.gradient-list > li + li {
 	 margin-top: 2rem;
 }
+.loader {
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+}
+
+
  </style>
