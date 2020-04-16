@@ -693,7 +693,7 @@ blink {
   border-bottom: 16px solid red;
 }
 
-flip-card {
+.flip-card {
   background-color: transparent;
   width: 300px;
   height: 200px;
