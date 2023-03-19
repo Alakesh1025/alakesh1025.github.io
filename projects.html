@@ -1,8 +1,41 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-	<title>Project Details with Image</title>
-	<meta charset="UTF-8">
+    <title>Alakesh</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Website landing Page for Developers">
+    <meta name="author" content="3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="jquery.js"></script> 
+		    <script> 
+		    $(function(){
+		      $("#includedMyInfo").load("headerr.html"); 
+		    });
+    </script> 
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		.container {
@@ -36,9 +69,28 @@
 			max-height: 100%;
 		}
 	</style>
-</head>
+</head> 
+
 <body>
-	<div class="container">
+    <!-- ******HEADER****** --> 
+    <header class="header">
+	 <div id="includedMyInfo"></div>
+    </header><!--//header-->
+    
+
+
+
+ <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-12 col-sm-12 col-xs-12">
+               <section class="experience section">
+                    <div class="section-inner" id="wor">
+                        <h2 class="heading">Contact me</h2>
+                        <div class="content">
+                            <div class="item" >
+			<ul>
+                               <li>
+				
 		<div class="fulltext">
 			<h3>Adaptive Resource Allocation for Faster Formation of 6TiSCH IoT Networks</h3>
 			<p>The 6TiSCH (IPv6 over TSCH mode of IEEE 802.15.4e) is a wireless networking standard designed to provide IPv6-supported Time Slotted Channel Hopping (TSCH) communication for the Industrial Internet of Things (IIoT) and other critical applications. The formation of a 6TiSCH network is challenging due to the inherent channel hopping feature of TSCH, where new joining nodes do not know in which channel and at what time control packets are being transmitted by the already joined nodes. In addition, the resource allocation by the 6TiSCH-MC (RFC 8180) standard for network bootstrapping is static and does not provide any mechanism to handle congestion in the shared cell used for transmitting control packets. Moreover, the 6TiSCH-MC standard does not provide information regarding the transmission rates of different control packets used to form the network. Therefore, I have augmented the 6TiSCH-MC standard by introducing updated mechanisms to achieve faster formation of 6TiSCH IoT networks, including varying the beacon frame generation interval of the nodes <a href="" target="_blank">[TMC'21]</a>, enabling opportunistic <a href="" target="_blank">[TIoT'21]</a> and fair <a href="" target="_blank">[JIoT'21]</a> channel access schemes, and providing mechanisms for utilizing all available physical channels <a href="" target="_blank">[JIoT'21]</a>, <a href="" target="_blank">[TMC'23]</a>. I have also opened several research directions on the faster formation of 6TiSCH networks, such as 6TiSCH formation in the presence of malicious nodes, asynchronous networks, and SDN control traffic <a href="" target="_blank">[TIoT'22]</a>.</p>
@@ -73,6 +125,46 @@
 		<div class="image">
 			<img src="image.jpg" alt="Project Image">
 		</div>
-	</div>
+	</div>	
+					
+					
+				</li>
+				
+				
+				
+			</ul>	    
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+	
+   
+ 
+      
+</section><!--//section-->
+</div><!--//primary-->
+</div><!--//row-->
+</div><!--//masonry-- 
+  <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                 <small class="copyright"> &copy;2020 Alakesh Kalita. </small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
-</html>
+
+
+<!DOCTYPE html>
+
