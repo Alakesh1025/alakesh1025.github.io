@@ -83,6 +83,13 @@ a.btn-cta-secondary:hover {
 .header .btn {
   margin-top: 190px;
 }
+
+
+.header .btn:hover {
+  text-decoration: none;
+  color: #2d844e; /* Darker green on hover */
+   transform: scale(1.1);
+}
 .header .profile-image {
     margin-top: 18px;
     margin-right: 20px;
