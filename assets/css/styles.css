@@ -28,7 +28,7 @@ a.btn {
   font-weight: bold;
   text-transform: uppercase;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -81,7 +81,7 @@ a.btn-cta-secondary:hover {
   text-align: left;
 }
 .header .btn {
-  margin-top: 30px;
+  margin-top: 90px;
 }
 .header .profile-image {
     margin-top: 18px;
