@@ -64,6 +64,10 @@ a.btn-cta-secondary:hover {
   background: #3893bd;
 }
 
+.btn:hover {
+    transform: scale(1.1);
+}
+
 /* Text Styling */
 .text-highlight {
   color: #32383e;
@@ -117,7 +121,7 @@ a.btn-cta-secondary:hover {
   margin: 0 5px;
 }
 .header .profile-content .social a:hover {
-  background: #778492;
+  background: #00FFFF;
 }
 
 /* Sections */
