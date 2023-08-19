@@ -97,14 +97,10 @@ a.btn-cta-secondary:hover {
 
 .navbar-nav > li > a {
   position: relative;
-  top: 35px;
-  left: 50%;
-  transform: translateX(-50%);
   display: inline-block;
   border: 2px solid #EBECF1;
   background-color: white;
-  border-radius: 30px;
-  animation: slideIN 1s ease-out;
+  border-radius: 10px;
 }
 
 .header .profile-image {
