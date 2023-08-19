@@ -86,12 +86,12 @@ a.btn-cta-secondary:hover {
 
 /* Apply hover effect to the first level of list items */
 .navbar-nav > li > a {
-  margin-top: 70px;
+  margin-top: 55px;
   transition: background-color 0.3s ease; /* Adding a transition effect */
 }
 
 .navbar-nav > li > a:hover {
-   transform: scale(1.15);
+   transform: scale(1.1);
 }
 
 
