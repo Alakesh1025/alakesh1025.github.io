@@ -81,12 +81,12 @@ a.btn-cta-secondary:hover {
   text-align: left;
 }
 .header .btn {
-  margin-top: 90px;
+  margin-top: 190px;
 }
 .header .profile-image {
     margin-top: 18px;
     margin-right: 20px;
-    max-width: 150px;
+    max-width: 140px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s ease-in-out;
