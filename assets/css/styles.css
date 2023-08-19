@@ -98,7 +98,7 @@ a.btn-cta-secondary:hover {
 .navbar-nav > li > a {
   position: relative;
   display: inline-block;
-  border: 2px solid #EBECF1;
+  border: 1px solid #EBECF1;
   background-color: white;
   border-radius: 10px;
 }
