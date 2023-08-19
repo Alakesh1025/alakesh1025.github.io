@@ -210,3 +210,8 @@ a.btn-cta-secondary:hover {
   margin: 0 0 40px;
 }
 
+.gradient-list li {
+  margin-right: 20px; /* Adjust the value as needed */
+}
+
+
