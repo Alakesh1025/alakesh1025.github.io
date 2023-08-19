@@ -1,88 +1,165 @@
 /* ======= Base ======= */
 body {
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: 'Lato', arial, sans-serif;
   color: #434343;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.6;
-  background-color: #f5f5f5;
+  background: #f5f5f5; /* Light gray background */
 }
 
+/* Links and Buttons */
 a {
   color: #3aaa64;
   transition: all 0.4s ease-in-out;
 }
-
 a:hover {
   text-decoration: none;
   color: #2d844e; /* Darker green on hover */
 }
-
 .btn,
 a.btn {
   transition: all 0.4s ease-in-out;
-  font-family: 'Montserrat', Arial, sans-serif;
-  padding: 8px 16px;
+  font-family: 'Montserrat', arial, sans-serif;
+  padding: 10px 20px; /* Increased padding */
   font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
-
 .btn .fa,
 a.btn .fa {
   margin-right: 5px;
 }
+.btn:focus,
+a.btn:focus {
+  outline: none;
+}
+.btn-cta-primary,
+a.btn-cta-primary {
+  background: #54ba4e;
+  color: #fff;
+}
+.btn-cta-primary:hover,
+a.btn-cta-primary:hover {
+  background: #49ac43;
+}
+.btn-cta-secondary,
+a.btn-cta-secondary {
+  background: #479fc8;
+  color: #fff;
+}
+.btn-cta-secondary:hover,
+a.btn-cta-secondary:hover {
+  background: #3893bd;
+}
 
-/* ======= Header ======= */
+/* Text Styling */
+.text-highlight {
+  color: #32383e;
+  font-weight: bold;
+}
+
+/* Header */
 .header {
   padding: 30px 0;
   background: #f5f5f5;
-  border-top: 10px solid #778492;
+  border-top: 10px solid #3aaa64; /* Green accent color */
   text-align: center;
 }
-
 .header .btn {
-  margin-top: 60px;
+  margin-top: 30px;
 }
-
 .header .profile-image {
   margin-right: 20px;
   margin-top: 6px;
 }
-
 .header .profile-content .name {
   color: #49515a;
+  font-size: 20px; /* Slightly smaller font size */
+  margin-top: 10px; /* Increased margin */
+}
+.header .profile-content .desc {
+  color: #778492;
   font-size: 16px;
-  margin-bottom: 3px;
-  margin-top: 3px;
+  margin-top: 5px; /* Increased margin */
+}
+.header .profile-content .social a {
+  background: #b0b7bf;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  margin: 0 5px;
+}
+.header .profile-content .social a:hover {
+  background: #778492;
 }
 
-/* ... (other styles) ... */
-
-/* ======= Sections ======= */
-.sections-wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
+/* Sections */
 .section {
-  margin-bottom: 30px;
+  margin-bottom: 40px; /* Increased margin */
 }
-
 .section .section-inner {
   background: #fff;
   padding: 30px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
-
 .section .heading {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Reduced margin */
   color: #545e69;
   font-size: 24px;
 }
 
-/* ... (other styles) ... */
+/* About Section */
+/* Latest Section */
+.latest .item {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.latest .item .title {
+  font-size: 18px;
+  margin-top: 0;
+  color: #2d844e; /* Dark green title */
+}
+.latest .item .project-image:hover {
+  opacity: 0.8;
+}
 
-/* ======= Footer ======= */
+/* Testimonials section */
+.testimonials .item {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.testimonials .item .quote {
+  color: #666666;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.testimonials .item .source {
+  font-size: 14px;
+  font-weight: 500;
+  color: #939ea9;
+}
+.testimonials .item .source .name {
+  color: #49515a;
+  font-weight: 600;
+}
+.testimonials .item .source .title {
+  color: #778492;
+}
+
+/* Footer */
 .footer {
   background: #32383e;
   color: #fff;
@@ -92,19 +169,14 @@ a.btn .fa {
   width: 100%;
   text-align: center;
 }
-
 .footer .copyright {
   line-height: 1.6;
   color: #a1aab4;
   font-size: 14px;
 }
-
 .footer a {
   color: #fff;
 }
-
 .footer .fa-heart {
   color: #fb866a;
 }
-
-/* ... (other styles) ... */
