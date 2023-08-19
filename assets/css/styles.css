@@ -84,13 +84,16 @@ a.btn-cta-secondary:hover {
   margin-top: 30px;
 }
 
-.navbar-nav li a {
+/* Apply hover effect to the first level of list items */
+.navbar-nav > li > a {
+  margin-top: 90px;
   transition: background-color 0.3s ease; /* Adding a transition effect */
 }
 
-.navbar-nav li a:hover {
-  transform: scale(1.15);
+.navbar-nav > li > a:hover {
+   transform: scale(1.15);
 }
+
 
 .header .profile-image {
     margin-top: 18px;
