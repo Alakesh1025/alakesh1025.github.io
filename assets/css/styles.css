@@ -90,9 +90,7 @@ a.btn-cta-secondary:hover {
 }
 
 .navbar-nav li a:hover {
-  background-color: #2d844e; /* Change to your desired hover background color */
-  color: white;/* Change to your desired hover text color */
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .header .profile-image {
