@@ -24,16 +24,18 @@ a:hover {
 
 .btn,
 a.btn {
+  display: inline-block; /* Set display to inline-block */
   transition: all 0.4s ease-in-out;
   font-family: 'Montserrat', arial, sans-serif;
-  padding: 12px 20px; /* Increased padding */
+  padding: 12px 20px;
   font-weight: bold;
   text-transform: uppercase;
   border: none;
-  border-radius: 5px; /* Added border-radius */
+  border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 .btn .fa,
 a.btn .fa {
@@ -78,7 +80,7 @@ a.btn-cta-secondary:hover {
 .header {
   padding: 30px 0;
   background: #f5f5f5;
-  border-top: 10px solid #1958EE; /* Green accent color */
+  border-top: 10px solid #999999; /* The top bar */
   text-align: left;
 }
 .header .btn {
