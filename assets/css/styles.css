@@ -9,50 +9,71 @@ body {
 }
 
 /* Links and Buttons */
+/* ======= Base ======= */
+/* ... (Your existing base styles) ... */
+
+/* Links and Buttons */
 a {
   color: #3aaa64;
-  transition: all 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
+
 a:hover {
   text-decoration: none;
-  color: #2d844e; /* Darker green on hover */
+  color: #2d844e;
 }
+
+.btn-cta-primary,
+a.btn-cta-primary {
+  background: #54ba4e;
+  border: 1px solid #54ba4e;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.btn-cta-primary:hover,
+a.btn-cta-primary:hover {
+  background: #49ac43;
+  border: 1px solid #49ac43;
+  color: #fff;
+}
+
+.header .profile-image {
+  margin-right: 20px;
+  margin-top: 6px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.header .profile-image:hover {
+  transform: scale(1.1);
+}
+
+.latest .item .project-image {
+  transition: opacity 0.4s ease-in-out;
+}
+
+.latest .item .project-image:hover {
+  opacity: 0.8;
+}
+
 .btn,
 a.btn {
   transition: all 0.4s ease-in-out;
   font-family: 'Montserrat', arial, sans-serif;
-  padding: 10px 20px; /* Increased padding */
+  padding: 8px 16px;
   font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.btn .fa,
-a.btn .fa {
-  margin-right: 5px;
+
+.btn:hover,
+a.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-.btn:focus,
-a.btn:focus {
-  outline: none;
-}
-.btn-cta-primary,
-a.btn-cta-primary {
-  background: #54ba4e;
-  color: #fff;
-}
-.btn-cta-primary:hover,
-a.btn-cta-primary:hover {
-  background: #49ac43;
-}
-.btn-cta-secondary,
-a.btn-cta-secondary {
-  background: #479fc8;
-  color: #fff;
-}
-.btn-cta-secondary:hover,
-a.btn-cta-secondary:hover {
-  background: #3893bd;
-}
+
+
 
 /* Text Styling */
 .text-highlight {
