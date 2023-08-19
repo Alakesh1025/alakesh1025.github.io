@@ -84,12 +84,16 @@ a.btn-cta-secondary:hover {
   margin-top: 30px;
 }
 
-
-.header .nav navbar-nav .btn:hover {
-  text-decoration: none;
-  color: #2d844e; /* Darker green on hover */
-   transform: scale(1.1);
+.navbar-nav li a {
+  transition: background-color 0.3s ease; /* Adding a transition effect */
 }
+
+.navbar-nav li a:hover {
+  background-color: #2d844e; /* Change to your desired hover background color */
+  color: #2d844e;/* Change to your desired hover text color */
+  transform: scale(1.1);
+}
+
 .header .profile-image {
     margin-top: 18px;
     margin-right: 20px;
