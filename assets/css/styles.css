@@ -93,28 +93,27 @@ a.btn-cta-secondary:hover {
   height: 50px; /* Adjust the height as needed */
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+/* Style the first-level links inside the navigation bar */
+.topnav > a {
   float: left;
-  color: #9FC5E8;
+  color: #FFFFFF; /* White link color for contrast */
   text-align: center;
   padding: 4px 10px;
   text-decoration: none;
   font-size: 15px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #F9CB9C;
-  color: #8E7CC3;
+/* Change the color of first-level links on hover */
+.topnav > a:hover {
+  background-color: #1969A8; /* Darker blue for hover */
+  color: #8E7CC3; /* Purple text color for hover */
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
+/* Add a color to the active/current first-level link */
+.topnav > a.active {
   background-color: #04AA6D;
   color: white;
 }
-
 
 /* Apply hover effect to the first level of list items margin-top: 55px; */
 .navbar-nav > li > a {
