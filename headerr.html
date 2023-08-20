@@ -66,20 +66,33 @@
         hi: "डॉ. अलकेश कलिता",
         as: "ড. অলকেশ কলিতা"
     };
-    const language = 'hi'; // Change this to the desired language code ('hi' for Hindi, 'as' for Assamese, etc.)
+    const languages = ['en', 'hi', 'as']; // List of language codes
 
-    const translatedName = translations[language];
-    
-    // Wrap each letter in a span for individual styling and animation
-    const letters = translatedName.split('').map(letter => {
-        return `<span class="name-letter">${letter}</span>`;
-    });
+    let currentLanguageIndex = 0; // Index to cycle through languages
 
-    nameElement.innerHTML = letters.join(''); // Replace the content with letters
+    // Function to switch to the next language
+    function switchLanguage() {
+        currentLanguageIndex = (currentLanguageIndex + 1) % languages.length;
+        const currentLanguage = languages[currentLanguageIndex];
+        const translatedName = translations[currentLanguage];
+        
+        const letters = translatedName.split('').map(letter => {
+            return `<span class="name-letter">${letter}</span>`;
+        });
 
-    const nameLetters = document.querySelectorAll('.name-letter');
-    nameLetters.forEach((letter, index) => {
-        letter.style.animationDelay = `${index * 0.1}s`; // Adjust delay for each letter
-    });
+        nameElement.innerHTML = letters.join('');
+
+        const nameLetters = document.querySelectorAll('.name-letter');
+        nameLetters.forEach((letter, index) => {
+            letter.style.animationDelay = `${index * 0.1}s`;
+        });
+    }
+
+    // Call switchLanguage initially
+    switchLanguage();
+
+    // Set interval to switch languages every 5 seconds (adjust as needed)
+    setInterval(switchLanguage, 5000); // Switch every 5 seconds
 </script>
+
 
