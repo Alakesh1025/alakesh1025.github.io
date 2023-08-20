@@ -86,17 +86,17 @@ a.btn-cta-secondary:hover {
 
 /* Style the navigation bar */
 .topnav {
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: #2980b9; /* Change the background color */
     overflow: hidden;
 }
 
 .topnav a {
     float: left;
-    font-size: 16px;
+    font-size: 13px;
     color: white;
     text-align: center;
-    padding: 15px 20px; /* Adjust padding for better height */
+    padding: 10px 10px; /* Adjust padding for better height */
     text-decoration: none;
 }
 
@@ -106,14 +106,14 @@ a.btn-cta-secondary:hover {
 }
 
 .dropdown .dropdown-toggle {
-    font-size: 16px;
+    font-size: 13px;
     border: none;
     outline: none;
     color: white;
     background-color: transparent;
     font-family: inherit;
     margin: 0;
-    padding: 15px 20px; /* Adjust padding for better height */
+    padding: 10px 10px; /* Adjust padding for better height */
     cursor: pointer;
 }
 
