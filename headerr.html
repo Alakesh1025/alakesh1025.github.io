@@ -73,6 +73,9 @@
 
   function startTyping() {
     let nameElement = document.querySelector('.name');
+    if (currentLetterIndex === 0) {
+      nameElement.textContent = ''; // Clear existing content
+    }
     if (currentLetterIndex < names[currentIndex].length) {
       nameElement.textContent += names[currentIndex][currentLetterIndex];
       currentLetterIndex++;
@@ -99,6 +102,7 @@
 
   intervalId = setInterval(startTyping, 100); // Start typing
 </script>
+
 
 
 
