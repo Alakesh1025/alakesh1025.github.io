@@ -99,7 +99,6 @@ a.btn-cta-secondary:hover {
     color: white;
     text-align: center;
     padding: 10px 15px; /* Adjusted padding */
-    line-height: 20px; /* Added line-height */
     text-decoration: none;
 }
 
@@ -119,6 +118,7 @@ a.btn-cta-secondary:hover {
     padding: 10px 15px; /* Adjusted padding */
     line-height: 20px; /* Added line-height */
     cursor: pointer;
+    position: relative;
 }
 
 .navbar a:hover,
