@@ -85,14 +85,20 @@ a.btn-cta-secondary:hover {
 }
 
 /* Style the navigation bar */
+
 .topnav {
-  margin-top: 20px;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #333;
 }
 
+.topnav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
 
 
