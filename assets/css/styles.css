@@ -250,7 +250,6 @@ a.btn-cta-secondary:hover {
 
   .name {
     font-size: 24px;
-    font-family: cursive;
     animation: writing 4s steps(20) forwards, languageChange 15s infinite;
   }
 
