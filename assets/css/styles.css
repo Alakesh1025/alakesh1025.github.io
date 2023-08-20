@@ -84,13 +84,63 @@ a.btn-cta-secondary:hover {
   margin-top: 30px;
 }
 
+/* Add a background color to the top navigation */
 .topnav {
-  margin-top: 50px;
-  background-color: #2E91DF;
+  background-color: #34495E; /* Dark blue background color */
   overflow: hidden;
   border-radius: 10px;
   height: 50px; /* Adjust the height as needed */
 }
+
+/* Style the top-level links inside the navigation bar */
+.topnav a {
+  color: #ECF0F1; /* Light gray link color for contrast */
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Change the color and background of top-level links on hover */
+.topnav a:hover {
+  background-color: #2ECC71; /* Light green hover background */
+  color: white; /* White text color on hover */
+}
+
+/* Styles for dropdown menus */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #34495E; /* Dark blue background for sub-menu */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 160px; /* Set a minimum width for sub-menu */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #ECF0F1; /* Light gray link color for sub-menu */
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #2ECC71; /* Light green hover background for sub-menu */
+  color: white; /* White text color on hover */
+}
+
 
 .header .profile-image {
     margin-top: 18px;
