@@ -115,15 +115,36 @@ a.btn-cta-secondary:hover {
   color: white;
 }
 
-/* Apply hover effect to the first level of list items margin-top: 55px; */
-.navbar-nav > li > a {
-  transition: background-color 0.3s ease; /* Adding a transition effect */
+/* Styles for dropdown menus */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.navbar-nav > li > a:hover {
-   border-radius: 10px;
-   transform: scale(1.1);
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2E91DF;
+  border-radius: 10px;
+  z-index: 1;
 }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #FFFFFF;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #1969A8;
+  color: #8E7CC3;
+}
+
 
 
 .header .profile-image {
