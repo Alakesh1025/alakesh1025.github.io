@@ -248,18 +248,12 @@ a.btn-cta-secondary:hover {
         color: #F73AE3; /* Change this to the desired color */
     }
 
-  .name {
+   .name {
     font-size: 24px;
-    animation: writing 4s steps(20) forwards, languageChange 15s infinite;
-  }
-
-  @keyframes writing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
+    font-family: cursive;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black; /* Typewriter effect */
   }
 
 
