@@ -121,8 +121,9 @@ a.btn-cta-secondary:hover {
 }
 .header .profile-content .name {
   color: #49515a;
-  font-size: 20px; /* Slightly smaller font size */
+  font-size: 25px; /* Slightly smaller font size */
   margin-top: 10px; /* Increased margin */
+  color: #800080;
 }
 .header .profile-content .desc {
   color: black;
