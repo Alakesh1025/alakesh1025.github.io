@@ -67,30 +67,32 @@
     "ডঃ অলকেশ কলিতা"
   ];
 
+  const intro = "I'm, ";
   let currentIndex = 0;
   let currentLetterIndex = 0;
   let intervalId;
 
   function startTyping() {
     let nameElement = document.querySelector('.name');
-    if (currentLetterIndex === 0) {
-      nameElement.textContent = ''; // Clear existing content
-    }
-    if (currentLetterIndex < names[currentIndex].length) {
-      nameElement.textContent += names[currentIndex][currentLetterIndex];
+    if (currentLetterIndex < intro.length + names[currentIndex].length) {
+      if (currentLetterIndex < intro.length) {
+        nameElement.textContent += intro[currentLetterIndex];
+      } else {
+        nameElement.textContent += names[currentIndex][currentLetterIndex - intro.length];
+      }
       currentLetterIndex++;
     } else {
       clearInterval(intervalId);
       setTimeout(() => {
-        intervalId = setInterval(deleteLetter, 50);
+        intervalId = setInterval(deleteName, 50);
       }, 1000);
     }
   }
 
-  function deleteLetter() {
+  function deleteName() {
     let nameElement = document.querySelector('.name');
-    if (currentLetterIndex > 0) {
-      nameElement.textContent = names[currentIndex].substring(0, currentLetterIndex - 1);
+    if (currentLetterIndex > intro.length) {
+      nameElement.textContent = intro + names[currentIndex].substring(0, currentLetterIndex - intro.length - 1);
       currentLetterIndex--;
     } else {
       clearInterval(intervalId);
@@ -102,6 +104,7 @@
 
   intervalId = setInterval(startTyping, 100); // Start typing
 </script>
+
 
 
 
