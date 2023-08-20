@@ -67,41 +67,42 @@
     "ডঃ অলকেশ কলিতা (ডি.এ)"
   ];
 
-  const intro = "I'm ";
   let currentIndex = 0;
-  let currentNameIndex = 0;
   let currentLetterIndex = 0;
   let intervalId;
 
   function startTyping() {
     let nameElement = document.querySelector('.name');
+    if (currentLetterIndex === 0) {
+      nameElement.textContent = ''; // Clear existing content
+    }
     if (currentLetterIndex < names[currentIndex].length) {
       nameElement.textContent += names[currentIndex][currentLetterIndex];
       currentLetterIndex++;
-    } else if (currentNameIndex === 0) {
+    } else {
       clearInterval(intervalId);
       setTimeout(() => {
-        intervalId = setInterval(deleteName, 50);
+        intervalId = setInterval(deleteLetter, 50);
       }, 1000);
     }
   }
 
-  function deleteName() {
+  function deleteLetter() {
     let nameElement = document.querySelector('.name');
-    if (currentLetterIndex > intro.length) {
-      nameElement.textContent = intro + names[currentIndex].substring(0, currentLetterIndex - intro.length - 1);
+    if (currentLetterIndex > 0) {
+      nameElement.textContent = names[currentIndex].substring(0, currentLetterIndex - 1);
       currentLetterIndex--;
     } else {
       clearInterval(intervalId);
       currentIndex = (currentIndex + 1) % names.length;
       currentLetterIndex = 0;
-      currentNameIndex++;
       intervalId = setInterval(startTyping, 100);
     }
   }
 
   intervalId = setInterval(startTyping, 100); // Start typing
 </script>
+
 
 
 
