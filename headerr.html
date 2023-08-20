@@ -63,19 +63,41 @@
 <script>
   const names = [
     "Dr. Alakesh Kalita (Ph.D.)",
-    "डॉ. अलकेश कलिता",
-    "ডঃ অলকেশ কলিতা"
+    "डॉ. अलकेश कलिता (डी.ए)",
+    "ডঃ অলকেশ কলিতা (ডি.এ)"
   ];
 
   let currentIndex = 0;
+  let currentLetterIndex = 0;
+  let intervalId;
 
-  function toggleNameLanguage() {
+  function startTyping() {
     let nameElement = document.querySelector('.name');
-    currentIndex = (currentIndex + 1) % names.length;
-    nameElement.textContent = names[currentIndex];
+    if (currentLetterIndex < names[currentIndex].length) {
+      nameElement.textContent += names[currentIndex][currentLetterIndex];
+      currentLetterIndex++;
+    } else {
+      clearInterval(intervalId);
+      setTimeout(() => {
+        intervalId = setInterval(deleteLetter, 50);
+      }, 1000);
+    }
   }
 
-  setInterval(toggleNameLanguage, 5000); // Toggle name every 5 seconds
+  function deleteLetter() {
+    let nameElement = document.querySelector('.name');
+    if (currentLetterIndex > 0) {
+      nameElement.textContent = names[currentIndex].substring(0, currentLetterIndex - 1);
+      currentLetterIndex--;
+    } else {
+      clearInterval(intervalId);
+      currentIndex = (currentIndex + 1) % names.length;
+      currentLetterIndex = 0;
+      intervalId = setInterval(startTyping, 100);
+    }
+  }
+
+  intervalId = setInterval(startTyping, 100); // Start typing
 </script>
 
 
