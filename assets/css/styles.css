@@ -87,6 +87,7 @@ a.btn-cta-secondary:hover {
 /* Style the navigation bar */
 
 .topnav {
+  margin-top: 50px;
   overflow: hidden;
   background-color: #333;
 }
@@ -100,7 +101,21 @@ a.btn-cta-secondary:hover {
   text-decoration: none;
 }
 
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
 
+.dropdown .dropdown-toggle {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
 
 .header .profile-image {
     margin-top: 18px;
