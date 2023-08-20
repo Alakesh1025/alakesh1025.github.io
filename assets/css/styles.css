@@ -257,16 +257,3 @@ a.btn-cta-secondary:hover {
     /* border-right: 3px solid black; Typewriter effect */
   }
 
-
-
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .topnav a, .dropdown .dropdown-toggle {
-        padding: 10px 8px;
-    }
-    
-    .dropdown-menu {
-        min-width: 140px;
-    }
-}
