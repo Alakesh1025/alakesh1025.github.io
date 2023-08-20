@@ -3,6 +3,7 @@
         <div class="col-sm-12 col-md-5 col-lg-5">
             <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" alt="Alakesh Kalita" />
             <div class="profile-content pull-left">
+                <h3 class="intro">I'm </h3>
                 <h3 class="name">Dr. Alakesh Kalita (Ph.D.)</h3>
                 <h5 class="desc">
                     <i class="fa fa-graduation-cap"> Research Fellow </i><br>
@@ -73,20 +74,31 @@
 
   function startTyping() {
     let nameElement = document.querySelector('.name');
-    let intro = "I'm, ";
-    if (currentLetterIndex < intro.length) {
-      nameElement.textContent += intro[currentLetterIndex];
+    if (currentLetterIndex < names[currentIndex].length) {
+      nameElement.textContent += names[currentIndex][currentLetterIndex];
       currentLetterIndex++;
-    } else if (currentLetterIndex === intro.length) {
-      nameElement.textContent += names[currentIndex];
+    } else {
       clearInterval(intervalId);
-      currentIndex = (currentIndex + 1) % names.length;
-      currentLetterIndex = 0;
-      intervalId = setInterval(startTyping, 5000);
+      setTimeout(() => {
+        intervalId = setInterval(deleteLetter, 50);
+      }, 1000);
     }
   }
 
-  intervalId = setInterval(startTyping, 5000); // Start typing
+  function deleteLetter() {
+    let nameElement = document.querySelector('.name');
+    if (currentLetterIndex > 0) {
+      nameElement.textContent = names[currentIndex].substring(0, currentLetterIndex - 1);
+      currentLetterIndex--;
+    } else {
+      clearInterval(intervalId);
+      currentIndex = (currentIndex + 1) % names.length;
+      currentLetterIndex = 0;
+      intervalId = setInterval(startTyping, 100);
+    }
+  }
+
+  intervalId = setInterval(startTyping, 100); // Start typing
 </script>
 
 
