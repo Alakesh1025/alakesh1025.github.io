@@ -84,7 +84,7 @@ a.btn-cta-secondary:hover {
   margin-top: 30px;
 }
 
-/* Add a background color to the top navigation */
+/* Header Navigation Styles */
 .topnav {
   background-color: #34495E;
   overflow: hidden;
@@ -92,7 +92,16 @@ a.btn-cta-secondary:hover {
   height: 50px; /* Adjust the height as needed */
 }
 
-/* Style the top-level links inside the navigation bar */
+.topnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav li {
+  display: inline-block;
+}
+
 .topnav a {
   color: #ECF0F1;
   padding: 15px 20px;
@@ -101,18 +110,12 @@ a.btn-cta-secondary:hover {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Change the color and background of top-level links on hover */
 .topnav a:hover {
   background-color: #2ECC71;
   color: white;
 }
 
 /* Styles for dropdown menus */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -133,7 +136,13 @@ a.btn-cta-secondary:hover {
   display: block;
   text-decoration: none;
   font-size: 14px;
-  transition: background-color 0.3s, color 0.
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #2ECC71;
+  color: white;
+}
 
 
 .header .profile-image {
