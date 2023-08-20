@@ -240,6 +240,11 @@ a.btn-cta-secondary:hover {
 
 
 /* Publication */
+.section-inner#pub {
+    background-color: #f0f0f0; /* Change to your desired color */
+    background-size: cover; /* Adjust as needed */
+}
+
 
 
 /* Responsive Styles */
