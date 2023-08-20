@@ -84,69 +84,15 @@ a.btn-cta-secondary:hover {
   margin-top: 30px;
 }
 
-/* Add a background color to the top navigation */
-.topnav {
-  margin-top: 50px;
-  background-color: #2E91DF;
-  overflow: hidden;
-  border-radius: 10px;
-   /* height: 50px; Adjust the height as needed */
+/* Apply hover effect to the first level of list items margin-top: 55px; */
+.navbar-nav > li > a {
+  transition: background-color 0.3s ease; /* Adding a transition effect */
 }
 
-/* Style the first-level links inside the navigation bar */
-.topnav > a {
-  float: left;
-  color: #FFFFFF; /* White link color for contrast */
-  text-align: center;
-  padding: 4px 10px;
-  text-decoration: none;
-  font-size: 15px;
+.navbar-nav > li > a:hover {
+   border-radius: 10px;
+   transform: scale(1.1);
 }
-
-/* Change the color of first-level links on hover */
-.topnav > a:hover {
-  background-color: #1969A8; /* Darker blue for hover */
-  color: #8E7CC3; /* Purple text color for hover */
-}
-
-/* Add a color to the active/current first-level link */
-.topnav > a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-
-/*  display: inline-block; Styles for dropdown menus */
-.navbar-nav{
-  position: relative;
- 
-}
-
-.navbar-nav-content {
-  display: none;
-  position: absolute;
-  background-color: #2E91DF;
-  border-radius: 10px;
-  z-index: 1;
-}
-
-.navbar-nav:hover .dropdown-content {
-  display: block;
-}
-
-.navbar-nav-content a {
-  color: #FFFFFF;
-  padding: 10px 15px;
-  display: block;
-  text-decoration: none;
-}
-
-.navbar-nav-content a:hover {
-  background-color: #1969A8;
-  color: #8E7CC3;
-}
-
-
 
 .header .profile-image {
     margin-top: 18px;
