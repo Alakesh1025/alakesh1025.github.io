@@ -250,10 +250,9 @@ a.btn-cta-secondary:hover {
 
    .name {
     font-size: 24px;
-    font-family: cursive;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid black; /* Typewriter effect */
+    /* border-right: 3px solid black; Typewriter effect */
   }
 
 
