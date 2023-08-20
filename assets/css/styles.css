@@ -86,7 +86,7 @@ a.btn-cta-secondary:hover {
 
 /* Add a background color to the top navigation */
 .topnav {
-  background-color: #34495E; /* Dark blue background color */
+  background-color: #34495E;
   overflow: hidden;
   border-radius: 10px;
   height: 50px; /* Adjust the height as needed */
@@ -94,7 +94,7 @@ a.btn-cta-secondary:hover {
 
 /* Style the top-level links inside the navigation bar */
 .topnav a {
-  color: #ECF0F1; /* Light gray link color for contrast */
+  color: #ECF0F1;
   padding: 15px 20px;
   text-decoration: none;
   font-size: 15px;
@@ -103,8 +103,8 @@ a.btn-cta-secondary:hover {
 
 /* Change the color and background of top-level links on hover */
 .topnav a:hover {
-  background-color: #2ECC71; /* Light green hover background */
-  color: white; /* White text color on hover */
+  background-color: #2ECC71;
+  color: white;
 }
 
 /* Styles for dropdown menus */
@@ -116,11 +116,11 @@ a.btn-cta-secondary:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #34495E; /* Dark blue background for sub-menu */
+  background-color: #34495E;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  min-width: 160px; /* Set a minimum width for sub-menu */
+  min-width: 160px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -128,18 +128,12 @@ a.btn-cta-secondary:hover {
 }
 
 .dropdown-content a {
-  color: #ECF0F1; /* Light gray link color for sub-menu */
+  color: #ECF0F1;
   padding: 10px 15px;
   display: block;
   text-decoration: none;
   font-size: 14px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.dropdown-content a:hover {
-  background-color: #2ECC71; /* Light green hover background for sub-menu */
-  color: white; /* White text color on hover */
-}
+  transition: background-color 0.3s, color 0.
 
 
 .header .profile-image {
