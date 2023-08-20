@@ -116,10 +116,10 @@ a.btn-cta-secondary:hover {
 }
 
 
-/* Styles for dropdown menus */
+/*  display: inline-block; Styles for dropdown menus */
 .navbar-nav{
   position: relative;
-  display: inline-block;
+ 
 }
 
 .navbar-nav-content {
