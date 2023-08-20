@@ -84,6 +84,14 @@ a.btn-cta-secondary:hover {
   margin-top: 30px;
 }
 
+.topnav {
+  margin-top: 50px;
+  background-color: #2E91DF;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 50px; /* Adjust the height as needed */
+}
+
 /* Apply hover effect to the first level of list items margin-top: 55px; */
 .navbar-nav > li > a {
   transition: background-color 0.3s ease; /* Adding a transition effect */
