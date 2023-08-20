@@ -252,14 +252,10 @@ a.btn-cta-secondary:hover {
     font-size: 27px;
     white-space: nowrap;
     overflow: hidden;
+    color: #800080;
     /* border-right: 3px solid black; Typewriter effect */
   }
 
-
-.intro {
-    font-size: 24px;
-    font-family: cursive; /* Replace "Your Desired Font" with the actual font name */
-  }
 
 
 
