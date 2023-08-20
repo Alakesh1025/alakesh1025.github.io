@@ -248,39 +248,33 @@ a.btn-cta-secondary:hover {
         color: #F73AE3; /* Change this to the desired color */
     }
 
-.name {
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-    animation: writeName-en 5s steps(27, end) forwards;
-}
+  .name {
+    font-size: 24px;
+    font-family: cursive;
+    animation: writing 4s steps(20) forwards, languageChange 15s infinite;
+  }
 
-@keyframes writeName-en {
+  @keyframes writing {
     from {
-        width: 0;
+      width: 0;
     }
     to {
-        width: 100%;
+      width: 100%;
     }
-}
+  }
 
-@keyframes writeName-hi {
-    from {
-        width: 0;
+  @keyframes languageChange {
+    0%, 50%, 100% {
+      content: "Dr. Alakesh Kalita (Ph.D.)";
     }
-    to {
-        width: 100%;
+    33.33% {
+      content: "डॉ. अलकेश कलिता (डी.ए)";
     }
-}
+    66.66% {
+      content: "ডঃ অলকেশ কলিতা (ডি.এ)";
+    }
+  }
 
-@keyframes writeName-as {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
 
 
 
