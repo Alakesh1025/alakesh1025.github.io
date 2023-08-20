@@ -86,9 +86,11 @@ a.btn-cta-secondary:hover {
 
 /* Style the navigation bar */
 .topnav {
-    margin-top: 30px;
-    background-color: #2980b9; /* Change the background color */
+    margin-top: 20px;
+    background-color: #2980b9;
     overflow: hidden;
+    position: relative;
+    z-index: 1000;
 }
 
 .topnav a {
@@ -96,13 +98,14 @@ a.btn-cta-secondary:hover {
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 10px 10px; /* Adjust padding for better height */
+    padding: 10px 15px; /* Adjusted padding */
+    line-height: 20px; /* Added line-height */
     text-decoration: none;
 }
 
 .dropdown {
     float: left;
-    position: absolute;
+    position: relative;
 }
 
 .dropdown .dropdown-toggle {
@@ -113,12 +116,14 @@ a.btn-cta-secondary:hover {
     background-color: transparent;
     font-family: inherit;
     margin: 0;
-    padding: 10px 10px; /* Adjust padding for better height */
+    padding: 10px 15px; /* Adjusted padding */
+    line-height: 20px; /* Added line-height */
     cursor: pointer;
 }
 
-.navbar a:hover, .dropdown:hover .dropdown-toggle {
-    background-color: #1e6091; /* Change the hover background color */
+.navbar a:hover,
+.dropdown:hover .dropdown-toggle {
+    background-color: #1e6091;
 }
 
 .dropdown-menu {
@@ -127,13 +132,13 @@ a.btn-cta-secondary:hover {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 2;
 }
 
 .dropdown-menu a {
     float: none;
     color: black;
-    padding: 10px 10px; /* Adjust padding for better height */
+    padding: 10px 15px; /* Adjusted padding */
     text-decoration: none;
     display: block;
     text-align: left;
