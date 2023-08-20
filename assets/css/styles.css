@@ -94,22 +94,10 @@ a.btn-cta-secondary:hover {
 .topnav {
     background-color: #2980b9;
     overflow: hidden;
+    white-space: nowrap; /* Prevent items from wrapping to a new line */
 }
 
-.topnav a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 10px 15px;
-    line-height: 20px;
-    text-decoration: none;
-}
-
-.dropdown {
-    position: relative;
-}
-
+.topnav a,
 .dropdown .dropdown-toggle {
     float: left;
     font-size: 16px;
@@ -118,6 +106,7 @@ a.btn-cta-secondary:hover {
     padding: 10px 15px;
     line-height: 20px;
     text-decoration: none;
+    display: inline-block; /* Display items inline */
 }
 
 .navbar a:hover,
@@ -127,7 +116,7 @@ a.btn-cta-secondary:hover {
 
 .dropdown-menu {
     display: none;
-    position: absolute; /* Use absolute positioning */
+    position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -135,7 +124,6 @@ a.btn-cta-secondary:hover {
     top: 100%;
     left: 0;
 }
-
 
 .dropdown-menu a {
     color: black;
@@ -157,6 +145,7 @@ a.btn-cta-secondary:hover {
 .topnav li:last-child {
     margin-right: 20px;
 }
+
 
 
 
