@@ -256,7 +256,10 @@ a.btn-cta-secondary:hover {
   }
 
 
-
+.intro {
+    font-size: 24px;
+    font-family: cursive; /* Replace "Your Desired Font" with the actual font name */
+  }
 
 
 
