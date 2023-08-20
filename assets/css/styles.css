@@ -248,7 +248,11 @@ a.btn-cta-secondary:hover {
         color: #F73AE3; /* Change this to the desired color */
     }
 
-   .name {
+ .intro {
+    font-size: 24px;
+    font-family: cursive;
+  }
+.name {
     font-size: 24px;
     white-space: nowrap;
     overflow: hidden;
