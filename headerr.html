@@ -63,8 +63,8 @@
 <script>
   const names = [
     "Dr. Alakesh Kalita (Ph.D.)",
-    "डॉ. अलकेश कलिता",
-    "ডঃ অলকেশ কলিতা"
+    "डॉ. अलकेश कलिता (डी.ए)",
+    "ডঃ অলকেশ কলিতা (ডি.এ)"
   ];
 
   let currentIndex = 0;
@@ -73,31 +73,20 @@
 
   function startTyping() {
     let nameElement = document.querySelector('.name');
-    if (currentLetterIndex < names[currentIndex].length) {
-      nameElement.textContent += names[currentIndex][currentLetterIndex];
+    let intro = "I'm, ";
+    if (currentLetterIndex < intro.length) {
+      nameElement.textContent += intro[currentLetterIndex];
       currentLetterIndex++;
-    } else {
-      clearInterval(intervalId);
-      setTimeout(() => {
-        intervalId = setInterval(deleteLetter, 50);
-      }, 1000);
-    }
-  }
-
-  function deleteLetter() {
-    let nameElement = document.querySelector('.name');
-    if (currentLetterIndex > 0) {
-      nameElement.textContent = names[currentIndex].substring(0, currentLetterIndex - 1);
-      currentLetterIndex--;
-    } else {
+    } else if (currentLetterIndex === intro.length) {
+      nameElement.textContent += names[currentIndex];
       clearInterval(intervalId);
       currentIndex = (currentIndex + 1) % names.length;
       currentLetterIndex = 0;
-      intervalId = setInterval(startTyping, 100);
+      intervalId = setInterval(startTyping, 5000);
     }
   }
 
-  intervalId = setInterval(startTyping, 0); // Start typing
+  intervalId = setInterval(startTyping, 5000); // Start typing
 </script>
 
 
