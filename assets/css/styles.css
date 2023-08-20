@@ -84,10 +84,11 @@ a.btn-cta-secondary:hover {
   margin-top: 30px;
 }
 
-/* Add a black background color to the top navigation */
+/* Add a background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #9FC5E8;
   overflow: hidden;
+  height: 50px; /* Adjust the height as needed */
 }
 
 /* Style the links inside the navigation bar */
@@ -95,9 +96,10 @@ a.btn-cta-secondary:hover {
   float: left;
   color: #9FC5E8;
   text-align: center;
-  padding: 10px 10px;
+  padding: 10px 15px; /* Adjust padding to create space around text */
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 30px; /* Adjust line-height to vertically center the text */
 }
 
 /* Change the color of links on hover */
@@ -111,6 +113,7 @@ a.btn-cta-secondary:hover {
   background-color: #04AA6D;
   color: white;
 }
+
 
 /* Apply hover effect to the first level of list items */
 .navbar-nav > li > a {
