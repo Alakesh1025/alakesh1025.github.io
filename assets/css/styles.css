@@ -88,7 +88,6 @@ a.btn-cta-secondary:hover {
 .topnav {
   background-color: #9FC5E8;
   overflow: hidden;
-  height: 50px; /* Adjust the height as needed */
 }
 
 /* Style the links inside the navigation bar */
@@ -96,10 +95,9 @@ a.btn-cta-secondary:hover {
   float: left;
   color: #9FC5E8;
   text-align: center;
-  padding: 10px 15px; /* Adjust padding to create space around text */
+  padding: 4px 10px;
   text-decoration: none;
   font-size: 15px;
-  line-height: 30px; /* Adjust line-height to vertically center the text */
 }
 
 /* Change the color of links on hover */
