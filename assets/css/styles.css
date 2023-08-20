@@ -263,17 +263,6 @@ a.btn-cta-secondary:hover {
     }
   }
 
-  @keyframes languageChange {
-    0%, 50%, 100% {
-      content: "Dr. Alakesh Kalita (Ph.D.)";
-    }
-    33.33% {
-      content: "डॉ. अलकेश कलिता (डी.ए)";
-    }
-    66.66% {
-      content: "ডঃ অলকেশ কলিতা (ডি.এ)";
-    }
-  }
 
 
 
