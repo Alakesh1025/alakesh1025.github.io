@@ -61,19 +61,25 @@
 </div><!--//container-->
 <script>
     const nameElement = document.querySelector('.name');
-    const names = [
-        'Dr. Alakesh Kalita (Ph.D.)', // English name
-        'डॉ. अलकेश कलिता (डी.ए.)' // Hindi name
-    ];
+    const translations = {
+        en: "Dr. Alakesh Kalita (Ph.D.)",
+        hi: "डॉ. अलकेश कलिता",
+        as: "ড. অলকেশ কলিতা"
+    };
+    const language = 'hi'; // Change this to the desired language code ('hi' for Hindi, 'as' for Assamese, etc.)
 
-    let currentIndex = 0; // Initialize the index of the current name
+    const translatedName = translations[language];
+    
+    // Wrap each letter in a span for individual styling and animation
+    const letters = translatedName.split('').map(letter => {
+        return `<span class="name-letter">${letter}</span>`;
+    });
 
-    // Function to toggle names
-    function toggleName() {
-        currentIndex = (currentIndex + 1) % names.length; // Cycle through the names
-        nameElement.textContent = names[currentIndex]; // Set the next name
-    }
+    nameElement.innerHTML = letters.join(''); // Replace the content with letters
 
-    // Set interval to toggle names every 5 seconds (adjust as needed)
-    setInterval(toggleName, 5000); // Toggle every 5 seconds
+    const nameLetters = document.querySelectorAll('.name-letter');
+    nameLetters.forEach((letter, index) => {
+        letter.style.animationDelay = `${index * 0.1}s`; // Adjust delay for each letter
+    });
 </script>
+
