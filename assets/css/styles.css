@@ -248,6 +248,22 @@ a.btn-cta-secondary:hover {
         color: #F73AE3; /* Change this to the desired color */
     }
 
+.name {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #333; /* Simulate the pen */
+    display: inline-block;
+    animation: writeName 5s steps(30, end) forwards;
+}
+
+@keyframes writeName {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
 
 
 
