@@ -59,26 +59,18 @@
         </div>
     </div>
 </div><!--//container-->
+
 <script>
-    const nameElement = document.querySelector('.name');
-    const languages = ['en', 'hi', 'as']; // List of language codes
+  function changeLanguage() {
+    let nameElement = document.querySelector('.name');
+    nameElement.style.animation = 'none';
+    void nameElement.offsetWidth; // Trigger a reflow to reset the animation
+    nameElement.style.animation = null;
+  }
 
-    let currentLanguageIndex = 0; // Index to cycle through languages
-
-    // Function to switch to the next language and animation
-    function switchLanguage() {
-        const currentLanguage = languages[currentLanguageIndex];
-        nameElement.style.animationName = `writeName-${currentLanguage}`;
-        
-        currentLanguageIndex = (currentLanguageIndex + 1) % languages.length;
-    }
-
-    // Call switchLanguage initially
-    switchLanguage();
-
-    // Set interval to switch languages every 5 seconds (adjust as needed)
-    setInterval(switchLanguage, 5000); // Switch every 5 seconds
+  setInterval(changeLanguage, 5000); // Change language every 5 seconds
 </script>
+
 
 
 
