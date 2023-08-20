@@ -245,18 +245,6 @@ a.btn-cta-secondary:hover {
     background-size: cover; /* Adjust as needed */
 }
 
-/* Day view styles */
-.day-theme .section-inner {
-    background-color: #ffffff;
-    color: #333333;
-}
-
-/* Night view styles */
-.night-theme .section-inner {
-    background-color: #111111;
-    color: #ffffff;
-}
-
 
 
 /* Responsive Styles */
