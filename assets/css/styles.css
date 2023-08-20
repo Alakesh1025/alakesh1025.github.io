@@ -89,6 +89,7 @@ a.btn-cta-secondary:hover {
   margin-top: 50px;
   border-radius: 10px;
   background-color: #D9EAD3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }  
 .navbar-nav > li > a {
   transition: background-color 0.3s ease; /* Adding a transition effect */
