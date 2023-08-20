@@ -111,15 +111,13 @@ a.btn-cta-secondary:hover {
 }
 
 .dropdown .dropdown-toggle {
-    font-size: 15px;
-    border: none;
-    outline: none;
+    float: left;
+    font-size: 16px;
     color: white;
-    background-color: transparent;
-    font-family: inherit;
+    text-align: center;
     padding: 10px 15px;
     line-height: 20px;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .navbar a:hover,
