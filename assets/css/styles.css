@@ -86,7 +86,7 @@ a.btn-cta-secondary:hover {
 
 /* Style the navigation bar */
 .topnav-wrapper {
-    margin-top: 20px;
+    margin-top: 50px;
     position: relative;
     z-index: 1;
 }
@@ -129,7 +129,7 @@ a.btn-cta-secondary:hover {
 
 .dropdown-menu {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
