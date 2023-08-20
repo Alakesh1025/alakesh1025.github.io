@@ -61,14 +61,21 @@
 </div><!--//container-->
 
 <script>
-  function changeLanguage() {
+  const names = [
+    "Dr. Alakesh Kalita (Ph.D.)",
+    "डॉ. अलकेश कलिता",
+    "ডঃ অলকেশ কলিতা"
+  ];
+
+  let currentIndex = 0;
+
+  function toggleNameLanguage() {
     let nameElement = document.querySelector('.name');
-    nameElement.style.animation = 'none';
-    void nameElement.offsetWidth; // Trigger a reflow to reset the animation
-    nameElement.style.animation = null;
+    currentIndex = (currentIndex + 1) % names.length;
+    nameElement.textContent = names[currentIndex];
   }
 
-  setInterval(changeLanguage, 5000); // Change language every 5 seconds
+  setInterval(toggleNameLanguage, 5000); // Toggle name every 5 seconds
 </script>
 
 
