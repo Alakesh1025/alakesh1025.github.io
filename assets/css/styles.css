@@ -86,9 +86,9 @@ a.btn-cta-secondary:hover {
 
 /* Add a background color to the top navigation */
 .topnav {
+   margin-top: 50px;
   background-color: #2E91DF;
   overflow: hidden;
-  height: 40px;
   border-radius: 10px;
 }
 
