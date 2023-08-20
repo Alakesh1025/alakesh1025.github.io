@@ -68,6 +68,7 @@
   ];
 
   const intro = "I'm, ";
+  const introFont = "cursive";
   let currentIndex = 0;
   let currentLetterIndex = 0;
   let intervalId;
@@ -76,6 +77,7 @@
     let nameElement = document.querySelector('.name');
     if (currentLetterIndex < names[currentIndex].length) {
       nameElement.textContent = intro + names[currentIndex].substring(0, currentLetterIndex + 1);
+      nameElement.style.fontFamily = introFont;  
       currentLetterIndex++;
     } else {
       clearInterval(intervalId);
