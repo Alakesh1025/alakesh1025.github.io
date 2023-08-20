@@ -88,7 +88,7 @@ a.btn-cta-secondary:hover {
 .topnav-wrapper {
     margin-top: 20px;
     position: relative;
-    z-index: 1; /* Adjusted z-index */
+    z-index: 1;
 }
 
 .topnav {
@@ -133,12 +133,12 @@ a.btn-cta-secondary:hover {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2; /* Adjusted z-index */
-    top: 100%; /* Position the dropdown below the parent link */
+    z-index: 2;
+    top: 100%;
+    left: 0; /* Position the dropdown menu on the left */
 }
 
 .dropdown-menu a {
-    float: none;
     color: black;
     padding: 10px 15px;
     text-decoration: none;
@@ -158,6 +158,7 @@ a.btn-cta-secondary:hover {
 .topnav li:last-child {
     margin-right: 20px;
 }
+
 
 
 
