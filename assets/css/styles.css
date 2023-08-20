@@ -85,12 +85,15 @@ a.btn-cta-secondary:hover {
 }
 
 /* Style the navigation bar */
-.topnav {
+.topnav-wrapper {
     margin-top: 20px;
     background-color: #2980b9;
-    overflow: hidden;
     position: relative;
-    z-index: 1000;
+    z-index: 1000; /* Adjusted z-index */
+}
+
+.topnav {
+    overflow: hidden;
 }
 
 .topnav a {
@@ -98,7 +101,8 @@ a.btn-cta-secondary:hover {
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 10px 15px; /* Adjusted padding */
+    padding: 10px 15px;
+    line-height: 20px;
     text-decoration: none;
 }
 
@@ -115,10 +119,9 @@ a.btn-cta-secondary:hover {
     background-color: transparent;
     font-family: inherit;
     margin: 0;
-    padding: 10px 15px; /* Adjusted padding */
-    line-height: 20px; /* Added line-height */
+    padding: 10px 15px;
+    line-height: 20px;
     cursor: pointer;
-    position: relative;
 }
 
 .navbar a:hover,
@@ -128,17 +131,17 @@ a.btn-cta-secondary:hover {
 
 .dropdown-menu {
     display: none;
-    position: relative;
+    position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
+    z-index: 1001;
 }
 
 .dropdown-menu a {
     float: none;
     color: black;
-    padding: 10px 15px; /* Adjusted padding */
+    padding: 10px 15px;
     text-decoration: none;
     display: block;
     text-align: left;
