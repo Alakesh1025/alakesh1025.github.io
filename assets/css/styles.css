@@ -93,7 +93,7 @@ a.btn-cta-secondary:hover {
 
 .topnav a {
     float: left;
-    font-size: 15px;
+    font-size: 16px;
     color: white;
     text-align: center;
     padding: 10px 10px; /* Adjust padding for better height */
@@ -102,7 +102,7 @@ a.btn-cta-secondary:hover {
 
 .dropdown {
     float: left;
-    position: relative;
+    position: absolute;
 }
 
 .dropdown .dropdown-toggle {
