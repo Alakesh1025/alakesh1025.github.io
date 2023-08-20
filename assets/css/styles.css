@@ -104,9 +104,6 @@ a.btn-cta-secondary:hover {
     display: block;
 }
 
-
-
-
 .header .profile-image {
     margin-top: 18px;
     margin-right: 20px;
@@ -240,6 +237,10 @@ a.btn-cta-secondary:hover {
 .gradient-list li {
   margin-right: 20px; /* Adjust the value as needed */
 }
+
+
+/* Publication */
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
