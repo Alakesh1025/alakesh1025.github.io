@@ -59,3 +59,21 @@
         </div>
     </div>
 </div><!--//container-->
+<script>
+    const nameElement = document.querySelector('.name');
+    const names = [
+        'Dr. Alakesh Kalita (Ph.D.)', // English name
+        'डॉ. अलकेश कलिता (डी.ए.)' // Hindi name
+    ];
+
+    let currentIndex = 0; // Initialize the index of the current name
+
+    // Function to toggle names
+    function toggleName() {
+        currentIndex = (currentIndex + 1) % names.length; // Cycle through the names
+        nameElement.textContent = names[currentIndex]; // Set the next name
+    }
+
+    // Set interval to toggle names every 5 seconds (adjust as needed)
+    setInterval(toggleName, 5000); // Toggle every 5 seconds
+</script>
