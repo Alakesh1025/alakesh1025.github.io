@@ -84,70 +84,15 @@ a.btn-cta-secondary:hover {
   margin-top: 30px;
 }
 
-/* Style the navigation bar */
-.topnav-wrapper {
-    margin-top: 50px;
-    position: relative;
-    z-index: 1;
+/* Apply hover effect to the first level of list items margin-top: 55px; */
+.navbar-nav > li > a {
+  transition: background-color 0.3s ease; /* Adding a transition effect */
 }
 
-.topnav {
-    background-color: #2980b9;
-    overflow: hidden;
-    white-space: nowrap; /* Prevent items from wrapping to a new line */
+.navbar-nav > li > a:hover {
+   border-radius: 10px;
+   transform: scale(1.1);
 }
-
-.topnav a,
-.dropdown .dropdown-toggle {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 4px 5px;
-    line-height: 50px;
-    text-decoration: none;
-    display: inline-block; /* Display items inline */
-    white-space: nowrap;
-}
-
-.navbar a:hover,
-.dropdown:hover .dropdown-toggle {
-    background-color: #1e6091;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-    top: 100%;
-    left: 0;
-}
-
-.dropdown-menu a {
-    color: black;
-     padding: 10px 0px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-menu a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-/* Align Contact me link properly */
-.topnav li:last-child {
-    margin-right: 20px;
-}
-
-
 
 
 
