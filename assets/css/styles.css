@@ -241,4 +241,13 @@ a.btn-cta-secondary:hover {
   margin-right: 20px; /* Adjust the value as needed */
 }
 
-
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .topnav a, .dropdown .dropdown-toggle {
+        padding: 10px 8px;
+    }
+    
+    .dropdown-menu {
+        min-width: 140px;
+    }
+}
