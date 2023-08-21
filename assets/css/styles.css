@@ -120,7 +120,6 @@ a.btn-cta-secondary:hover {
     text-align: left;
 }
 .header .profile-content .name {
-  color: #49515a;
   font-size: 25px; /* Slightly smaller font size */
   margin-top: 10px; /* Increased margin */
   color: #800080;
@@ -246,7 +245,7 @@ a.btn-cta-secondary:hover {
     background-size: cover; /* Adjust as needed */
 }
 .section-inner#pub b {
-        color: #49515a; /* Change this to the desired color */
+        color: #800080; /* Change this to the desired color */
     }
 
 .name {
