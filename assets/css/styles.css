@@ -99,9 +99,10 @@ a.btn-cta-secondary:hover {
    transform: scale(1.1);
 }
 
+/*
 .topnav .dropdown:hover .dropdown-menu {
     display: block;
-}
+}*/
 
 .header .profile-image {
     margin-top: 18px;
