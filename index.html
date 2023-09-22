@@ -61,7 +61,32 @@
         		    <p>It's been more than 7 years, I'm working in the field of Internet of Things. Back in 2016, I worked in an Indian government-sponsored project titled "Quality of Service Provisioning in Internet of Things" as a research scientist. Later, in 2017, I worked in Internet of Vehicle in IIIT Guwahati.</p>
 				
                             <p>My current research interests include Internet of Things, Game Theory in Computer Networks</p> 
-			  
+
+			    <p id="news"></p>
+
+			   <script>
+					var i = 0;
+					var txt = 'I am an incoming Univeristy Lecturer in Singapore University of Technology and Design (<a href="https://www.sutd.edu.sg/"> SUTD</a>).';
+					var speed = 100;
+					
+					function typeWriter() {
+					  if (i < txt.length) {
+					    document.getElementById("news").innerHTML += txt.charAt(i);
+					    i++;
+					    setTimeout(typeWriter, speed);
+					  } else {
+					    // Reset i to 0 and clear the content of the "demo" element
+					    i = 0;
+					    document.getElementById("news").innerHTML = '';
+					    setTimeout(typeWriter, speed); // Start typing again after a delay
+					  }
+					}
+					
+					// Call the typeWriter function when the page loads
+					window.onload = function() {
+					  typeWriter();
+					};
+			</script>	
 			    	
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
