@@ -36,6 +36,29 @@
 		      $("#includedMyInfo").load("headerr.html"); 
 		    });
     </script> 
+
+<style>
+        .contact-list {
+            list-style: none; /* Remove the bullet */
+        }
+
+        .contact-list li {
+            display: inline-block; /* Make the block as long as the text */
+            background-color: #3498db; /* Professional color for the block */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .contact-list li p {
+            margin: 0; /* Remove default margin */
+            color: #fff; /* Text color for the block */
+        }
+
+        .contact-list li i {
+            margin-right: 10px; /* Add space between the icon and text */
+        }
+    </style>	
     
 </head> 
 <body>
@@ -52,7 +75,7 @@
                         <div class="content">
                             <div class="item">
                                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-                                <ul>
+                                <ul class="contact-list">
                                     <li>
                                         <p class="subDetails">
                                             <i class="fas fa-university"></i>
@@ -70,8 +93,6 @@
             </div><!--//primary-->
         </div><!--//row-->
     </div><!--//container-->
-</body>
-
 
  <!-- ******FOOTER****** --> 
     <footer class="footer">
