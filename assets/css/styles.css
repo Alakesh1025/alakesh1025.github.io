@@ -242,11 +242,11 @@ a.btn-cta-secondary:hover {
 
 /* Publication */
 .section-inner#pub {
-    background-color: #D8E5F0; /* Change to your desired color */
+    background-color: #f9f9f9; /* Change to your desired color */
     background-size: cover; /* Adjust as needed */
 }
 .section-inner#pub b {
-        color: #800080; /* Change this to the desired color */
+        color: #f9f9f9; /* Change this to the desired color */
     }
 
 .name {
