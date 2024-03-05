@@ -267,7 +267,7 @@ a.btn-cta-secondary:hover {
     border-radius: 5px;
     background-color: #f9f9f9;
     overflow-y: auto; /* Add vertical scrollbar if needed */
-    max-height: 300px; /* Set maximum height for the container */
+    max-height: 400px; /* Set maximum height for the container */
 }
 
 .heading_news {
