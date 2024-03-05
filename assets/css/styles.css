@@ -256,4 +256,33 @@ a.btn-cta-secondary:hover {
     color: #800080;
     /* border-right: 3px solid black; Typewriter effect */
   }
+.news-list {
+    list-style-type: none;
+    padding: 0;
+}
 
+.news-item {
+    margin-bottom: 10px; /* Reduced spacing between news items */
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    transition: transform 0.3s; /* Smooth transition on hover */
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.news-item:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.news-item p:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
