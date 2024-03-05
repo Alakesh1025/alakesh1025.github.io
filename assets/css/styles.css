@@ -259,7 +259,7 @@ a.btn-cta-secondary:hover {
 
 
 /* latest news */
-.container_second {
+.container_news {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -268,7 +268,7 @@ a.btn-cta-secondary:hover {
     background-color: #f9f9f9;
 }
 
-.heading {
+.heading_news {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
