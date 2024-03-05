@@ -256,6 +256,19 @@ a.btn-cta-secondary:hover {
     color: #800080;
     /* border-right: 3px solid black; Typewriter effect */
   }
+
+
+/* latest news */
+.container_second {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
 .news-list {
     list-style-type: none;
     padding: 0;
