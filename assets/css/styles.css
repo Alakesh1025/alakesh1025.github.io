@@ -272,6 +272,7 @@ a.btn-cta-secondary:hover {
 
 .heading_news {
     font-size: 23px;
+    margin: 10px auto;
     margin-bottom: 20px;
     color: #333;
 }
