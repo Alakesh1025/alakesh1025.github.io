@@ -122,12 +122,12 @@ a.btn-cta-secondary:hover {
 }
 .header .profile-content .name {
   font-size: 25px; /* Slightly smaller font size */
-  margin-top: 10px; /* Increased margin */
+  margin-top: 18px; /* Increased margin */
   color: #800080;
 }
 .header .profile-content .desc {
   color: #007bff;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 12px; /* Increased margin */
   font-family: 'Roboto', sans-serif;
 }
