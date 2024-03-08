@@ -126,9 +126,9 @@ a.btn-cta-secondary:hover {
   color: #800080;
 }
 .header .profile-content .desc {
-  color: #333CFF;
+  color: #3386FF;
   font-size: 16px;
-  margin-top: 5px; /* Increased margin */
+  margin-top: 10px; /* Increased margin */
 }
 .header .profile-content .social a {
   background: #b0b7bf;
